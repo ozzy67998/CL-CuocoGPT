@@ -1,0 +1,231 @@
+@prefix ex: <http://example.org/recipes#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Ingredient a rdfs:Class .
+
+ex:Nutrition a rdfs:Class .
+
+ex:Recipe a rdfs:Class .
+
+ex:Step a rdfs:Class .
+
+ex:Tag a rdfs:Class .
+
+ex:Recipe_100002 a ex:Recipe ;
+    rdfs:label "chips ahoy chocolate pie" ;
+    ex:hasIngredient ex:Ingredient_butter,
+        ex:Ingredient_chocolate_chip_cookies,
+        ex:Ingredient_chocolate_instant_pudding,
+        ex:Ingredient_cool_whip,
+        ex:Ingredient_milk ;
+    ex:hasNutrition ex:Recipe_100002_Nutrition ;
+    ex:hasStep ex:Recipe_100002_StepsSeq ;
+    ex:hasTag ex:Tag_5_ingredients_or_less,
+        ex:Tag_60_minutes_or_less,
+        ex:Tag_course,
+        ex:Tag_desserts,
+        ex:Tag_easy,
+        ex:Tag_pies,
+        ex:Tag_pies_and_tarts,
+        ex:Tag_preparation,
+        ex:Tag_time_to_make ;
+    ex:id 100002 ;
+    ex:minutes 40 ;
+    ex:n_ingredients 5 ;
+    ex:n_steps 10 ;
+    ex:origin "original randomized" .
+
+ex:Recipe_100230 a ex:Recipe ;
+    rdfs:label "astoria frosting" ;
+    ex:hasIngredient ex:Ingredient_butter,
+        ex:Ingredient_flour,
+        ex:Ingredient_milk,
+        ex:Ingredient_salt,
+        ex:Ingredient_sugar,
+        ex:Ingredient_vanilla_extract ;
+    ex:hasNutrition ex:Recipe_100230_Nutrition ;
+    ex:hasStep ex:Recipe_100230_StepsSeq ;
+    ex:hasTag ex:Tag_30_minutes_or_less,
+        ex:Tag_cake_fillings_and_frostings,
+        ex:Tag_cakes,
+        ex:Tag_course,
+        ex:Tag_desserts,
+        ex:Tag_dietary,
+        ex:Tag_kid_friendly,
+        ex:Tag_low_in_something,
+        ex:Tag_low_protein,
+        ex:Tag_preparation,
+        ex:Tag_time_to_make ;
+    ex:id 100230 ;
+    ex:minutes 20 ;
+    ex:n_ingredients 6 ;
+    ex:n_steps 7 ;
+    ex:origin "original randomized" .
+
+
+ex:Recipe_100002_Nutrition a ex:Nutrition ;
+    ex:calories 3.581e+02 ;
+    ex:protein 7e+00 ;
+    ex:saturatedFat 6.3e+01 ;
+    ex:sodium 1.5e+01 ;
+    ex:sugar 4.2e+01 ;
+    ex:totalFat 3.5e+01 ;
+    ex:unknown 1.1e+01 .
+
+ex:Recipe_100002_Step_1 a ex:Step ;
+    rdfs:comment "crush 16 cookies in a sealable plastic bag until fine crumbs form" .
+
+ex:Recipe_100002_Step_10 a ex:Step ;
+    rdfs:comment "top with reserved cookie crumbs" .
+
+ex:Recipe_100002_Step_2 a ex:Step ;
+    rdfs:comment "mix 1 1 / 2 cups of the crumbs with melted butter" .
+
+ex:Recipe_100002_Step_3 a ex:Step ;
+    rdfs:comment "press firmly onto bottom and up side of 9-inch pie plate to form crust" .
+
+ex:Recipe_100002_Step_4 a ex:Step ;
+    rdfs:comment "reserve remaining crumbs" .
+
+ex:Recipe_100002_Step_5 a ex:Step ;
+    rdfs:comment "combine 1 1 / 2 cups milk and pudding mix in medium bowl" .
+
+ex:Recipe_100002_Step_6 a ex:Step ;
+    rdfs:comment "stir for 2 minutes with wire whisk" .
+
+ex:Recipe_100002_Step_7 a ex:Step ;
+    rdfs:comment "gently stir in 2 cups thawed cool whip" .
+
+ex:Recipe_100002_Step_8 a ex:Step ;
+    rdfs:comment "spoon into crust" .
+
+ex:Recipe_100002_Step_9 a ex:Step ;
+    rdfs:comment "refrigerate 30 minutes or until set" .
+
+ex:Recipe_100002_StepsSeq a rdf:Seq ;
+    rdf:_1 ex:Recipe_100002_Step_1 ;
+    rdf:_10 ex:Recipe_100002_Step_10 ;
+    rdf:_2 ex:Recipe_100002_Step_2 ;
+    rdf:_3 ex:Recipe_100002_Step_3 ;
+    rdf:_4 ex:Recipe_100002_Step_4 ;
+    rdf:_5 ex:Recipe_100002_Step_5 ;
+    rdf:_6 ex:Recipe_100002_Step_6 ;
+    rdf:_7 ex:Recipe_100002_Step_7 ;
+    rdf:_8 ex:Recipe_100002_Step_8 ;
+    rdf:_9 ex:Recipe_100002_Step_9 .
+
+    
+ex:Ingredient_chocolate_chip_cookies a ex:Ingredient ;
+    rdfs:label "chocolate chip cookies" .
+
+ex:Ingredient_chocolate_instant_pudding a ex:Ingredient ;
+    rdfs:label "chocolate instant pudding" .
+
+ex:Ingredient_cool_whip a ex:Ingredient ;
+    rdfs:label "cool whip" .
+
+ex:Ingredient_milk a ex:Ingredient ;
+    rdfs:label "milk" .
+
+ex:Ingredient_butter a ex:Ingredient ;
+rdfs:label "butter" .
+
+ex:Tag_60_minutes_or_less a ex:Tag ;
+    rdfs:label "60-minutes-or-less" .
+
+ex:Tag_course a ex:Tag ;
+    rdfs:label "course" .
+
+ex:Tag_desserts a ex:Tag ;
+    rdfs:label "desserts" .
+
+ex:Tag_easy a ex:Tag ;
+    rdfs:label "easy" .
+
+ex:Tag_pies a ex:Tag ;
+    rdfs:label "pies" .
+
+ex:Tag_pies_and_tarts a ex:Tag ;
+    rdfs:label "pies-and-tarts" .
+
+ex:Tag_preparation a ex:Tag ;
+    rdfs:label "preparation" .
+
+ex:Tag_time_to_make a ex:Tag ;
+    rdfs:label "time-to-make" .
+
+
+ex:Recipe_100230_Nutrition a ex:Nutrition ;
+    ex:calories 9.04e+02 ;
+    ex:protein 9e+00 ;
+    ex:saturatedFat 2.03e+02 ;
+    ex:sodium 2.1e+01 ;
+    ex:sugar 2.67e+02 ;
+    ex:totalFat 9.9e+01 ;
+    ex:unknown 2.6e+01 .
+
+ex:Recipe_100230_Step_1 a ex:Step ;
+    rdfs:comment "in a small saucepan , mix milk , flour and salt until smooth" .
+
+ex:Recipe_100230_Step_2 a ex:Step ;
+    rdfs:comment "place over low heat and cook , stirring constantly until thickened" .
+
+ex:Recipe_100230_Step_3 a ex:Step ;
+    rdfs:comment "remove from heat and cool" .
+
+ex:Recipe_100230_Step_4 a ex:Step ;
+    rdfs:comment "cream butter and sugar until very light and fluffy , about 5 minutes" .
+
+ex:Recipe_100230_Step_5 a ex:Step ;
+    rdfs:comment "gradually beat in cooled flour mixture until smooth" .
+
+ex:Recipe_100230_Step_6 a ex:Step ;
+    rdfs:comment "beat in vanilla" .
+
+ex:Recipe_100230_Step_7 a ex:Step ;
+    rdfs:comment "frosts one cake" .
+
+ex:Recipe_100230_StepsSeq a rdf:Seq ;
+    rdf:_1 ex:Recipe_100230_Step_1 ;
+    rdf:_2 ex:Recipe_100230_Step_2 ;
+    rdf:_3 ex:Recipe_100230_Step_3 ;
+    rdf:_4 ex:Recipe_100230_Step_4 ;
+    rdf:_5 ex:Recipe_100230_Step_5 ;
+    rdf:_6 ex:Recipe_100230_Step_6 ;
+    rdf:_7 ex:Recipe_100230_Step_7 .
+
+
+ex:Ingredient_flour a ex:Ingredient ;
+    rdfs:label "flour" .
+
+ex:Ingredient_salt a ex:Ingredient ;
+    rdfs:label "salt" .
+
+ex:Ingredient_sugar a ex:Ingredient ;
+    rdfs:label "sugar" .
+
+ex:Ingredient_vanilla_extract a ex:Ingredient ;
+    rdfs:label "vanilla extract" .
+
+ex:Tag_30_minutes_or_less a ex:Tag ;
+    rdfs:label "30-minutes-or-less" .
+
+ex:Tag_cake_fillings_and_frostings a ex:Tag ;
+    rdfs:label "cake-fillings-and-frostings" .
+
+ex:Tag_cakes a ex:Tag ;
+    rdfs:label "cakes" .
+
+ex:Tag_dietary a ex:Tag ;
+    rdfs:label "dietary" .
+
+ex:Tag_kid_friendly a ex:Tag ;
+    rdfs:label "kid-friendly" .
+
+ex:Tag_low_in_something a ex:Tag ;
+    rdfs:label "low-in-something" .
+
+ex:Tag_low_protein a ex:Tag ;
+    rdfs:label "low-protein" .

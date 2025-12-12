@@ -1,0 +1,1101 @@
+text,label
+prep time for feijoada,get_prep_time
+find low-carb meals,list_by_tag
+what do I need for paella,retrieve_ingredients
+recipes that include queijo,list_by_ingredient
+mostra receitas spicy,list_by_tag
+show dishes using salmon,list_by_ingredient
+o que preciso para fazer lasagna,retrieve_ingredients
+show me a light dish,find_recipe
+find recipes with carne,list_by_ingredient
+procura receitas com feijão,list_by_ingredient
+how long to cook carne assada,get_prep_time
+o que preciso para fazer pizza,retrieve_ingredients
+find a economical recipe,find_recipe
+show vegetarian recipes,list_by_tag
+find recipes with courgette,list_by_ingredient
+show me a gluten-free dish,find_recipe
+procura uma receita simple,find_recipe
+how long to cook feijoada,get_prep_time
+list vegan dishes,list_by_tag
+what do I need for sopa de legumes,retrieve_ingredients
+ingredients for arroz doce,retrieve_ingredients
+list ingredients of carne assada,retrieve_ingredients
+prep time for lasagna,get_prep_time
+prep time for tiramisu,get_prep_time
+find healthy meals,list_by_tag
+ingredientes para mousse de chocolate,retrieve_ingredients
+find a healthy recipe,find_recipe
+o que preciso para fazer paella,retrieve_ingredients
+find recipes with frango,list_by_ingredient
+list ingredients of pizza,retrieve_ingredients
+quero pratos com frango,list_by_ingredient
+procura uma receita rápida,find_recipe
+list spicy dishes,list_by_tag
+prep time for bolo de cenoura,get_prep_time
+procura uma receita healthy,find_recipe
+quero pratos com porco,list_by_ingredient
+show me a low-carb dish,find_recipe
+how long to cook carbonara,get_prep_time
+find recipes with nozes,list_by_ingredient
+show simple recipes,list_by_tag
+list spicy dishes,list_by_tag
+quero uma receita economical,find_recipe
+find rápida meals,list_by_tag
+show gluten-free recipes,list_by_tag
+what do I need for moqueca,retrieve_ingredients
+ingredients for mousse de chocolate,retrieve_ingredients
+ingredients for risotto,retrieve_ingredients
+procura pratos breakfast,list_by_tag
+show dishes using salmon,list_by_ingredient
+quanto tempo leva bolo de iogurte,get_prep_time
+tempo de preparo da bolo de iogurte,get_prep_time
+procura pratos spicy,list_by_tag
+ingredients for sopa de legumes,retrieve_ingredients
+show dishes using chocolate,list_by_ingredient
+recipes that include tomate,list_by_ingredient
+what do I need for bolo de cenoura,retrieve_ingredients
+how much time to make canja,get_prep_time
+suggest a spicy recipe,find_recipe
+list ingredients of lasagna,retrieve_ingredients
+find a breakfast recipe,find_recipe
+find brasileira meals,list_by_tag
+recipes that include carne,list_by_ingredient
+find recipes with queijo,list_by_ingredient
+ingredients for arroz doce,retrieve_ingredients
+find recipes with nozes,list_by_ingredient
+prep time for carbonara,get_prep_time
+procura pratos healthy,list_by_tag
+show me a dessert dish,find_recipe
+ingredients for carne assada,retrieve_ingredients
+quero pratos com alho,list_by_ingredient
+list breakfast dishes,list_by_tag
+find a economical recipe,find_recipe
+procura receitas com courgette,list_by_ingredient
+how long to cook pizza,get_prep_time
+quero uma receita gluten-free,find_recipe
+procura pratos light,list_by_tag
+procura pratos vegetarian,list_by_tag
+quanto tempo leva carne assada,get_prep_time
+ingredientes para moqueca,retrieve_ingredients
+show dishes using porco,list_by_ingredient
+prep time for carbonara,get_prep_time
+tempo de preparo da carbonara,get_prep_time
+prep time for sopa de legumes,get_prep_time
+find a gluten-free recipe,find_recipe
+tempo de preparo da moqueca,get_prep_time
+show me a easy dish,find_recipe
+recipes that include batata,list_by_ingredient
+prep time for carbonara,get_prep_time
+prep time for moqueca,get_prep_time
+suggest a light recipe,find_recipe
+prep time for bolo de cenoura,get_prep_time
+quanto tempo leva carne assada,get_prep_time
+quero pratos com frango,list_by_ingredient
+find dessert meals,list_by_tag
+suggest a easy recipe,find_recipe
+show me a low-carb dish,find_recipe
+o que preciso para fazer carne assada,retrieve_ingredients
+what do I need for carbonara,retrieve_ingredients
+how much time to make lasagna,get_prep_time
+list ingredients of mousse de chocolate,retrieve_ingredients
+ingredients for risotto,retrieve_ingredients
+recipes that include porco,list_by_ingredient
+procura uma receita brasileira,find_recipe
+quanto tempo leva carne assada,get_prep_time
+suggest a rápida recipe,find_recipe
+how much time to make arroz doce,get_prep_time
+how long to cook apple pie,get_prep_time
+prep time for carbonara,get_prep_time
+ingredientes para salada russa,retrieve_ingredients
+list ingredients of canja,retrieve_ingredients
+show easy recipes,list_by_tag
+list gluten-free dishes,list_by_tag
+list vegan dishes,list_by_tag
+procura pratos low-carb,list_by_tag
+find vegetarian meals,list_by_tag
+show dishes using atum,list_by_ingredient
+how much time to make mousse de chocolate,get_prep_time
+list rápida dishes,list_by_tag
+how much time to make arroz doce,get_prep_time
+find a dessert recipe,find_recipe
+procura receitas com porco,list_by_ingredient
+show dishes using arroz,list_by_ingredient
+list healthy dishes,list_by_tag
+mostra receitas breakfast,list_by_tag
+show economical recipes,list_by_tag
+list low-carb dishes,list_by_tag
+list ingredients of guacamole,retrieve_ingredients
+list ingredients of apple pie,retrieve_ingredients
+show dishes using frango,list_by_ingredient
+how long to cook feijoada,get_prep_time
+show me a rápida dish,find_recipe
+list healthy dishes,list_by_tag
+show gluten-free recipes,list_by_tag
+show me a rápida dish,find_recipe
+find recipes with banana,list_by_ingredient
+o que preciso para fazer pancakes,retrieve_ingredients
+how long to cook sopa de legumes,get_prep_time
+prep time for risotto,get_prep_time
+procura pratos dessert,list_by_tag
+procura receitas com porco,list_by_ingredient
+ingredients for waffles,retrieve_ingredients
+find a light recipe,find_recipe
+recipes that include porco,list_by_ingredient
+show breakfast recipes,list_by_tag
+find simple meals,list_by_tag
+recipes that include tomate,list_by_ingredient
+prep time for carbonara,get_prep_time
+ingredients for salada russa,retrieve_ingredients
+list ingredients of mousse de chocolate,retrieve_ingredients
+find healthy meals,list_by_tag
+procura uma receita spicy,find_recipe
+quanto tempo leva guacamole,get_prep_time
+how much time to make apple pie,get_prep_time
+list ingredients of bolo de cenoura,retrieve_ingredients
+how much time to make salada russa,get_prep_time
+show me a economical dish,find_recipe
+prep time for carne assada,get_prep_time
+procura receitas com bacalhau,list_by_ingredient
+list ingredients of feijoada,retrieve_ingredients
+quanto tempo leva bolo de cenoura,get_prep_time
+show healthy recipes,list_by_tag
+what do I need for carbonara,retrieve_ingredients
+ingredients for guacamole,retrieve_ingredients
+show me a low-carb dish,find_recipe
+find a spicy recipe,find_recipe
+how long to cook risotto,get_prep_time
+tempo de preparo da apple pie,get_prep_time
+find a dessert recipe,find_recipe
+ingredients for canja,retrieve_ingredients
+show low-carb recipes,list_by_tag
+find healthy meals,list_by_tag
+list dessert dishes,list_by_tag
+ingredients for waffles,retrieve_ingredients
+show low-carb recipes,list_by_tag
+procura pratos portuguesa,list_by_tag
+prep time for carbonara,get_prep_time
+show me a rápida dish,find_recipe
+tempo de preparo da arroz doce,get_prep_time
+mostra receitas healthy,list_by_tag
+procura pratos low-carb,list_by_tag
+procura uma receita simple,find_recipe
+ingredientes para feijoada,retrieve_ingredients
+mostra receitas vegetarian,list_by_tag
+ingredients for sopa de legumes,retrieve_ingredients
+ingredientes para pancakes,retrieve_ingredients
+tempo de preparo da carbonara,get_prep_time
+quero uma receita economical,find_recipe
+list ingredients of guacamole,retrieve_ingredients
+quero uma receita gluten-free,find_recipe
+ingredientes para guacamole,retrieve_ingredients
+tempo de preparo da mousse de chocolate,get_prep_time
+list low-carb dishes,list_by_tag
+show dishes using nozes,list_by_ingredient
+find recipes with salmon,list_by_ingredient
+how long to cook paella,get_prep_time
+ingredientes para pancakes,retrieve_ingredients
+find recipes with queijo,list_by_ingredient
+find recipes with chocolate,list_by_ingredient
+quero uma receita spicy,find_recipe
+find a vegetarian recipe,find_recipe
+quanto tempo leva carne assada,get_prep_time
+suggest a healthy recipe,find_recipe
+ingredients for guacamole,retrieve_ingredients
+procura pratos gluten-free,list_by_tag
+show me a dessert dish,find_recipe
+procura uma receita brasileira,find_recipe
+show me a low-carb dish,find_recipe
+mostra receitas economical,list_by_tag
+show me a easy dish,find_recipe
+find recipes with espinafres,list_by_ingredient
+prep time for canja,get_prep_time
+ingredients for paella,retrieve_ingredients
+procura receitas com alho,list_by_ingredient
+how much time to make risotto,get_prep_time
+procura receitas com coco,list_by_ingredient
+show me a low-carb dish,find_recipe
+o que preciso para fazer pizza,retrieve_ingredients
+show me a dessert dish,find_recipe
+list easy dishes,list_by_tag
+ingredients for apple pie,retrieve_ingredients
+o que preciso para fazer bolo de iogurte,retrieve_ingredients
+how much time to make sopa de legumes,get_prep_time
+ingredients for apple pie,retrieve_ingredients
+recipes that include camarão,list_by_ingredient
+suggest a light recipe,find_recipe
+list ingredients of tiramisu,retrieve_ingredients
+recipes that include arroz,list_by_ingredient
+mostra receitas vegetarian,list_by_tag
+mostra receitas light,list_by_tag
+find recipes with chocolate,list_by_ingredient
+tempo de preparo da salada russa,get_prep_time
+find recipes with cogumelos,list_by_ingredient
+find recipes with chocolate,list_by_ingredient
+find gluten-free meals,list_by_tag
+show healthy recipes,list_by_tag
+list ingredients of arroz doce,retrieve_ingredients
+prep time for carne assada,get_prep_time
+quanto tempo leva tiramisu,get_prep_time
+suggest a vegan recipe,find_recipe
+list simple dishes,list_by_tag
+o que preciso para fazer waffles,retrieve_ingredients
+list light dishes,list_by_tag
+what do I need for tiramisu,retrieve_ingredients
+how much time to make pancakes,get_prep_time
+prep time for pancakes,get_prep_time
+ingredients for carbonara,retrieve_ingredients
+suggest a healthy recipe,find_recipe
+show me a breakfast dish,find_recipe
+how long to cook bolo de cenoura,get_prep_time
+quanto tempo leva mousse de chocolate,get_prep_time
+procura uma receita healthy,find_recipe
+how much time to make apple pie,get_prep_time
+show dishes using atum,list_by_ingredient
+show dishes using chocolate,list_by_ingredient
+procura uma receita healthy,find_recipe
+quero uma receita low-carb,find_recipe
+recipes that include courgette,list_by_ingredient
+how long to cook bolo de cenoura,get_prep_time
+find recipes with feijão,list_by_ingredient
+ingredients for tiramisu,retrieve_ingredients
+suggest a spicy recipe,find_recipe
+quero pratos com carne,list_by_ingredient
+ingredientes para pancakes,retrieve_ingredients
+ingredientes para bolo de cenoura,retrieve_ingredients
+procura receitas com alho,list_by_ingredient
+o que preciso para fazer sopa de legumes,retrieve_ingredients
+ingredients for carbonara,retrieve_ingredients
+tempo de preparo da lasagna,get_prep_time
+find a economical recipe,find_recipe
+how long to cook carbonara,get_prep_time
+ingredients for sopa de legumes,retrieve_ingredients
+ingredients for tiramisu,retrieve_ingredients
+list spicy dishes,list_by_tag
+o que preciso para fazer risotto,retrieve_ingredients
+find vegan meals,list_by_tag
+quanto tempo leva carne assada,get_prep_time
+mostra receitas dessert,list_by_tag
+ingredientes para carbonara,retrieve_ingredients
+o que preciso para fazer feijoada,retrieve_ingredients
+recipes that include salmon,list_by_ingredient
+list portuguesa dishes,list_by_tag
+tempo de preparo da paella,get_prep_time
+list ingredients of bolo de cenoura,retrieve_ingredients
+list easy dishes,list_by_tag
+find brasileira meals,list_by_tag
+show me a healthy dish,find_recipe
+find recipes with salmon,list_by_ingredient
+mostra receitas dessert,list_by_tag
+ingredients for salada russa,retrieve_ingredients
+list simple dishes,list_by_tag
+quanto tempo leva salada russa,get_prep_time
+show breakfast recipes,list_by_tag
+show me a easy dish,find_recipe
+find recipes with alho,list_by_ingredient
+quanto tempo leva moqueca,get_prep_time
+ingredientes para lasagna,retrieve_ingredients
+mostra receitas easy,list_by_tag
+procura pratos spicy,list_by_tag
+ingredientes para risotto,retrieve_ingredients
+quero uma receita low-carb,find_recipe
+ingredientes para guacamole,retrieve_ingredients
+quero pratos com carne,list_by_ingredient
+ingredients for feijoada,retrieve_ingredients
+procura uma receita vegetarian,find_recipe
+quanto tempo leva arroz doce,get_prep_time
+procura uma receita vegan,find_recipe
+suggest a rápida recipe,find_recipe
+suggest a breakfast recipe,find_recipe
+show me a breakfast dish,find_recipe
+show dishes using camarão,list_by_ingredient
+how much time to make apple pie,get_prep_time
+o que preciso para fazer tiramisu,retrieve_ingredients
+find economical meals,list_by_tag
+find recipes with banana,list_by_ingredient
+mostra receitas economical,list_by_tag
+ingredients for risotto,retrieve_ingredients
+list low-carb dishes,list_by_tag
+suggest a breakfast recipe,find_recipe
+list spicy dishes,list_by_tag
+show dishes using camarão,list_by_ingredient
+list easy dishes,list_by_tag
+list ingredients of mousse de chocolate,retrieve_ingredients
+quero uma receita spicy,find_recipe
+quanto tempo leva waffles,get_prep_time
+find a gluten-free recipe,find_recipe
+procura uma receita dessert,find_recipe
+quanto tempo leva waffles,get_prep_time
+quanto tempo leva salada russa,get_prep_time
+recipes that include porco,list_by_ingredient
+recipes that include nozes,list_by_ingredient
+what do I need for bolo de iogurte,retrieve_ingredients
+procura receitas com tomate,list_by_ingredient
+quero pratos com queijo,list_by_ingredient
+o que preciso para fazer apple pie,retrieve_ingredients
+how much time to make bolo de iogurte,get_prep_time
+how much time to make arroz doce,get_prep_time
+what do I need for risotto,retrieve_ingredients
+recipes that include camarão,list_by_ingredient
+suggest a easy recipe,find_recipe
+suggest a breakfast recipe,find_recipe
+find recipes with salmon,list_by_ingredient
+quero uma receita economical,find_recipe
+show dessert recipes,list_by_tag
+how much time to make bolo de iogurte,get_prep_time
+how much time to make guacamole,get_prep_time
+tempo de preparo da waffles,get_prep_time
+mostra receitas low-carb,list_by_tag
+quero pratos com tomate,list_by_ingredient
+show portuguesa recipes,list_by_tag
+quero uma receita easy,find_recipe
+quero pratos com espinafres,list_by_ingredient
+what do I need for apple pie,retrieve_ingredients
+o que preciso para fazer pancakes,retrieve_ingredients
+mostra receitas vegetarian,list_by_tag
+procura receitas com feijão,list_by_ingredient
+list ingredients of guacamole,retrieve_ingredients
+tempo de preparo da mousse de chocolate,get_prep_time
+recipes that include cogumelos,list_by_ingredient
+prep time for risotto,get_prep_time
+quanto tempo leva risotto,get_prep_time
+procura pratos brasileira,list_by_tag
+list simple dishes,list_by_tag
+quero uma receita vegan,find_recipe
+quero pratos com banana,list_by_ingredient
+procura receitas com tomate,list_by_ingredient
+ingredients for tiramisu,retrieve_ingredients
+list simple dishes,list_by_tag
+ingredientes para feijoada,retrieve_ingredients
+tempo de preparo da mousse de chocolate,get_prep_time
+how much time to make guacamole,get_prep_time
+mostra receitas spicy,list_by_tag
+how much time to make pizza,get_prep_time
+find rápida meals,list_by_tag
+prep time for carbonara,get_prep_time
+procura receitas com banana,list_by_ingredient
+tempo de preparo da risotto,get_prep_time
+find breakfast meals,list_by_tag
+find vegetarian meals,list_by_tag
+mostra receitas gluten-free,list_by_tag
+how much time to make apple pie,get_prep_time
+mostra receitas breakfast,list_by_tag
+find a vegan recipe,find_recipe
+show economical recipes,list_by_tag
+suggest a rápida recipe,find_recipe
+procura uma receita gluten-free,find_recipe
+procura receitas com banana,list_by_ingredient
+tempo de preparo da lasagna,get_prep_time
+mostra receitas healthy,list_by_tag
+ingredientes para pizza,retrieve_ingredients
+quanto tempo leva tiramisu,get_prep_time
+ingredientes para pancakes,retrieve_ingredients
+o que preciso para fazer pancakes,retrieve_ingredients
+suggest a breakfast recipe,find_recipe
+show dishes using chocolate,list_by_ingredient
+ingredientes para moqueca,retrieve_ingredients
+find a vegetarian recipe,find_recipe
+list ingredients of salada russa,retrieve_ingredients
+procura uma receita gluten-free,find_recipe
+prep time for paella,get_prep_time
+find a easy recipe,find_recipe
+show dishes using bacalhau,list_by_ingredient
+quero uma receita rápida,find_recipe
+procura receitas com porco,list_by_ingredient
+recipes that include arroz,list_by_ingredient
+show dishes using camarão,list_by_ingredient
+ingredientes para pizza,retrieve_ingredients
+show healthy recipes,list_by_tag
+suggest a portuguesa recipe,find_recipe
+find a economical recipe,find_recipe
+quero pratos com coco,list_by_ingredient
+suggest a dessert recipe,find_recipe
+quero uma receita breakfast,find_recipe
+suggest a easy recipe,find_recipe
+find gluten-free meals,list_by_tag
+mostra receitas rápida,list_by_tag
+suggest a portuguesa recipe,find_recipe
+show dishes using courgette,list_by_ingredient
+find rápida meals,list_by_tag
+list rápida dishes,list_by_tag
+find recipes with cogumelos,list_by_ingredient
+procura receitas com carne,list_by_ingredient
+list gluten-free dishes,list_by_tag
+prep time for moqueca,get_prep_time
+list ingredients of moqueca,retrieve_ingredients
+ingredients for pancakes,retrieve_ingredients
+procura pratos portuguesa,list_by_tag
+show easy recipes,list_by_tag
+show breakfast recipes,list_by_tag
+how much time to make waffles,get_prep_time
+show me a economical dish,find_recipe
+list vegan dishes,list_by_tag
+find recipes with batata,list_by_ingredient
+o que preciso para fazer arroz doce,retrieve_ingredients
+show dishes using alho,list_by_ingredient
+ingredients for carbonara,retrieve_ingredients
+quero uma receita spicy,find_recipe
+quero pratos com frango,list_by_ingredient
+quero pratos com nozes,list_by_ingredient
+quero pratos com nozes,list_by_ingredient
+tempo de preparo da guacamole,get_prep_time
+how much time to make guacamole,get_prep_time
+find recipes with arroz,list_by_ingredient
+how much time to make risotto,get_prep_time
+list breakfast dishes,list_by_tag
+list ingredients of salada russa,retrieve_ingredients
+show me a healthy dish,find_recipe
+show me a easy dish,find_recipe
+procura receitas com coco,list_by_ingredient
+suggest a brasileira recipe,find_recipe
+list vegan dishes,list_by_tag
+list ingredients of pancakes,retrieve_ingredients
+suggest a easy recipe,find_recipe
+find a low-carb recipe,find_recipe
+quanto tempo leva tiramisu,get_prep_time
+procura pratos rápida,list_by_tag
+tempo de preparo da salada russa,get_prep_time
+recipes that include bacalhau,list_by_ingredient
+list ingredients of pizza,retrieve_ingredients
+suggest a dessert recipe,find_recipe
+quero uma receita spicy,find_recipe
+how long to cook risotto,get_prep_time
+show easy recipes,list_by_tag
+show spicy recipes,list_by_tag
+quanto tempo leva bolo de cenoura,get_prep_time
+mostra receitas breakfast,list_by_tag
+show me a gluten-free dish,find_recipe
+quanto tempo leva bolo de cenoura,get_prep_time
+how much time to make mousse de chocolate,get_prep_time
+quero uma receita light,find_recipe
+o que preciso para fazer lasagna,retrieve_ingredients
+quero uma receita rápida,find_recipe
+procura uma receita portuguesa,find_recipe
+find light meals,list_by_tag
+how long to cook bolo de cenoura,get_prep_time
+what do I need for pizza,retrieve_ingredients
+ingredientes para bolo de iogurte,retrieve_ingredients
+ingredients for moqueca,retrieve_ingredients
+procura pratos easy,list_by_tag
+show dishes using salmon,list_by_ingredient
+mostra receitas breakfast,list_by_tag
+find a economical recipe,find_recipe
+recipes that include chocolate,list_by_ingredient
+find recipes with nozes,list_by_ingredient
+show dishes using arroz,list_by_ingredient
+ingredientes para pizza,retrieve_ingredients
+suggest a simple recipe,find_recipe
+how much time to make lasagna,get_prep_time
+list simple dishes,list_by_tag
+mostra receitas vegetarian,list_by_tag
+recipes that include queijo,list_by_ingredient
+find recipes with arroz,list_by_ingredient
+tempo de preparo da moqueca,get_prep_time
+how long to cook pizza,get_prep_time
+mostra receitas easy,list_by_tag
+recipes that include espinafres,list_by_ingredient
+show gluten-free recipes,list_by_tag
+prep time for moqueca,get_prep_time
+find recipes with bacalhau,list_by_ingredient
+show dishes using batata,list_by_ingredient
+o que preciso para fazer bolo de iogurte,retrieve_ingredients
+prep time for moqueca,get_prep_time
+what do I need for sopa de legumes,retrieve_ingredients
+show me a portuguesa dish,find_recipe
+quanto tempo leva carbonara,get_prep_time
+quanto tempo leva bolo de cenoura,get_prep_time
+prep time for moqueca,get_prep_time
+list ingredients of guacamole,retrieve_ingredients
+list dessert dishes,list_by_tag
+find recipes with porco,list_by_ingredient
+how long to cook carbonara,get_prep_time
+procura receitas com frango,list_by_ingredient
+tempo de preparo da bolo de iogurte,get_prep_time
+ingredientes para bolo de cenoura,retrieve_ingredients
+procura pratos breakfast,list_by_tag
+find recipes with cogumelos,list_by_ingredient
+list ingredients of feijoada,retrieve_ingredients
+list economical dishes,list_by_tag
+quanto tempo leva paella,get_prep_time
+quero uma receita light,find_recipe
+find recipes with chocolate,list_by_ingredient
+procura uma receita spicy,find_recipe
+suggest a vegetarian recipe,find_recipe
+ingredients for salada russa,retrieve_ingredients
+prep time for waffles,get_prep_time
+ingredientes para bolo de cenoura,retrieve_ingredients
+mostra receitas light,list_by_tag
+ingredients for mousse de chocolate,retrieve_ingredients
+quanto tempo leva waffles,get_prep_time
+find recipes with espinafres,list_by_ingredient
+how much time to make lasagna,get_prep_time
+show dishes using carne,list_by_ingredient
+find light meals,list_by_tag
+recipes that include carne,list_by_ingredient
+list ingredients of pizza,retrieve_ingredients
+suggest a spicy recipe,find_recipe
+how much time to make risotto,get_prep_time
+how much time to make carbonara,get_prep_time
+show me a breakfast dish,find_recipe
+mostra receitas portuguesa,list_by_tag
+show dishes using carne,list_by_ingredient
+list rápida dishes,list_by_tag
+list low-carb dishes,list_by_tag
+find recipes with courgette,list_by_ingredient
+mostra receitas vegetarian,list_by_tag
+list vegan dishes,list_by_tag
+quero uma receita dessert,find_recipe
+find recipes with queijo,list_by_ingredient
+mostra receitas gluten-free,list_by_tag
+recipes that include queijo,list_by_ingredient
+procura receitas com espinafres,list_by_ingredient
+find light meals,list_by_tag
+quero pratos com banana,list_by_ingredient
+find a healthy recipe,find_recipe
+find a breakfast recipe,find_recipe
+show dishes using cogumelos,list_by_ingredient
+find recipes with alho,list_by_ingredient
+suggest a brasileira recipe,find_recipe
+quero uma receita easy,find_recipe
+mostra receitas light,list_by_tag
+quero pratos com arroz,list_by_ingredient
+show me a gluten-free dish,find_recipe
+show me a dessert dish,find_recipe
+quanto tempo leva feijoada,get_prep_time
+how long to cook waffles,get_prep_time
+prep time for tiramisu,get_prep_time
+how long to cook salada russa,get_prep_time
+find recipes with atum,list_by_ingredient
+how much time to make apple pie,get_prep_time
+find recipes with alho,list_by_ingredient
+quanto tempo leva carbonara,get_prep_time
+mostra receitas simple,list_by_tag
+list healthy dishes,list_by_tag
+show me a low-carb dish,find_recipe
+procura uma receita brasileira,find_recipe
+quero uma receita light,find_recipe
+list ingredients of arroz doce,retrieve_ingredients
+find vegan meals,list_by_tag
+prep time for bolo de cenoura,get_prep_time
+prep time for pizza,get_prep_time
+ingredients for pizza,retrieve_ingredients
+mostra receitas portuguesa,list_by_tag
+suggest a vegan recipe,find_recipe
+list ingredients of sopa de legumes,retrieve_ingredients
+find vegan meals,list_by_tag
+ingredientes para sopa de legumes,retrieve_ingredients
+quero uma receita portuguesa,find_recipe
+mostra receitas portuguesa,list_by_tag
+list ingredients of waffles,retrieve_ingredients
+recipes that include atum,list_by_ingredient
+what do I need for tiramisu,retrieve_ingredients
+ingredients for pizza,retrieve_ingredients
+procura pratos spicy,list_by_tag
+list simple dishes,list_by_tag
+find low-carb meals,list_by_tag
+procura pratos light,list_by_tag
+quero uma receita light,find_recipe
+list gluten-free dishes,list_by_tag
+suggest a vegetarian recipe,find_recipe
+o que preciso para fazer sopa de legumes,retrieve_ingredients
+o que preciso para fazer lasagna,retrieve_ingredients
+ingredients for apple pie,retrieve_ingredients
+ingredientes para bolo de iogurte,retrieve_ingredients
+procura receitas com salmon,list_by_ingredient
+show dishes using frango,list_by_ingredient
+how long to cook pancakes,get_prep_time
+show me a portuguesa dish,find_recipe
+find simple meals,list_by_tag
+show dishes using espinafres,list_by_ingredient
+quanto tempo leva carbonara,get_prep_time
+list simple dishes,list_by_tag
+prep time for guacamole,get_prep_time
+how much time to make bolo de iogurte,get_prep_time
+quero pratos com cogumelos,list_by_ingredient
+find a vegetarian recipe,find_recipe
+ingredients for paella,retrieve_ingredients
+list spicy dishes,list_by_tag
+quero uma receita brasileira,find_recipe
+show vegetarian recipes,list_by_tag
+find dessert meals,list_by_tag
+what do I need for mousse de chocolate,retrieve_ingredients
+procura uma receita portuguesa,find_recipe
+procura receitas com batata,list_by_ingredient
+ingredients for waffles,retrieve_ingredients
+how long to cook pizza,get_prep_time
+quero pratos com coco,list_by_ingredient
+mostra receitas brasileira,list_by_tag
+show dishes using chocolate,list_by_ingredient
+procura receitas com salmon,list_by_ingredient
+find recipes with chocolate,list_by_ingredient
+o que preciso para fazer pizza,retrieve_ingredients
+procura uma receita spicy,find_recipe
+list ingredients of tiramisu,retrieve_ingredients
+what do I need for pizza,retrieve_ingredients
+what do I need for bolo de iogurte,retrieve_ingredients
+how long to cook paella,get_prep_time
+how long to cook tiramisu,get_prep_time
+quero uma receita gluten-free,find_recipe
+o que preciso para fazer canja,retrieve_ingredients
+quero uma receita breakfast,find_recipe
+mostra receitas vegan,list_by_tag
+show dishes using banana,list_by_ingredient
+ingredients for bolo de cenoura,retrieve_ingredients
+find dessert meals,list_by_tag
+what do I need for apple pie,retrieve_ingredients
+procura pratos easy,list_by_tag
+ingredients for carne assada,retrieve_ingredients
+how long to cook mousse de chocolate,get_prep_time
+how long to cook lasagna,get_prep_time
+show me a healthy dish,find_recipe
+what do I need for pizza,retrieve_ingredients
+suggest a light recipe,find_recipe
+tempo de preparo da feijoada,get_prep_time
+prep time for lasagna,get_prep_time
+find spicy meals,list_by_tag
+quero pratos com arroz,list_by_ingredient
+show me a brasileira dish,find_recipe
+quanto tempo leva bolo de cenoura,get_prep_time
+list ingredients of guacamole,retrieve_ingredients
+show me a vegan dish,find_recipe
+list gluten-free dishes,list_by_tag
+mostra receitas gluten-free,list_by_tag
+o que preciso para fazer feijoada,retrieve_ingredients
+how much time to make paella,get_prep_time
+what do I need for bolo de cenoura,retrieve_ingredients
+list breakfast dishes,list_by_tag
+ingredients for paella,retrieve_ingredients
+quero uma receita spicy,find_recipe
+find breakfast meals,list_by_tag
+mostra receitas vegetarian,list_by_tag
+how much time to make sopa de legumes,get_prep_time
+o que preciso para fazer canja,retrieve_ingredients
+find a economical recipe,find_recipe
+show dishes using batata,list_by_ingredient
+list light dishes,list_by_tag
+quero pratos com courgette,list_by_ingredient
+quero uma receita brasileira,find_recipe
+ingredientes para risotto,retrieve_ingredients
+how long to cook salada russa,get_prep_time
+o que preciso para fazer carne assada,retrieve_ingredients
+ingredients for apple pie,retrieve_ingredients
+list ingredients of bolo de cenoura,retrieve_ingredients
+find recipes with bacalhau,list_by_ingredient
+find vegetarian meals,list_by_tag
+ingredientes para canja,retrieve_ingredients
+show dishes using chocolate,list_by_ingredient
+mostra receitas breakfast,list_by_tag
+find a breakfast recipe,find_recipe
+suggest a simple recipe,find_recipe
+show dishes using porco,list_by_ingredient
+how long to cook salada russa,get_prep_time
+procura pratos low-carb,list_by_tag
+mostra receitas breakfast,list_by_tag
+procura receitas com camarão,list_by_ingredient
+o que preciso para fazer feijoada,retrieve_ingredients
+procura receitas com queijo,list_by_ingredient
+find economical meals,list_by_tag
+quanto tempo leva canja,get_prep_time
+prep time for pizza,get_prep_time
+procura uma receita healthy,find_recipe
+find breakfast meals,list_by_tag
+list vegan dishes,list_by_tag
+suggest a portuguesa recipe,find_recipe
+tempo de preparo da carbonara,get_prep_time
+list ingredients of waffles,retrieve_ingredients
+list ingredients of mousse de chocolate,retrieve_ingredients
+procura pratos healthy,list_by_tag
+quero pratos com chocolate,list_by_ingredient
+o que preciso para fazer mousse de chocolate,retrieve_ingredients
+how long to cook waffles,get_prep_time
+show me a easy dish,find_recipe
+procura uma receita economical,find_recipe
+quanto tempo leva carne assada,get_prep_time
+recipes that include atum,list_by_ingredient
+list gluten-free dishes,list_by_tag
+quanto tempo leva feijoada,get_prep_time
+quanto tempo leva paella,get_prep_time
+ingredientes para moqueca,retrieve_ingredients
+how long to cook feijoada,get_prep_time
+procura receitas com frango,list_by_ingredient
+quero uma receita economical,find_recipe
+recipes that include tomate,list_by_ingredient
+quanto tempo leva risotto,get_prep_time
+quanto tempo leva bolo de cenoura,get_prep_time
+what do I need for mousse de chocolate,retrieve_ingredients
+tempo de preparo da pancakes,get_prep_time
+show low-carb recipes,list_by_tag
+show dishes using coco,list_by_ingredient
+list ingredients of feijoada,retrieve_ingredients
+what do I need for waffles,retrieve_ingredients
+what do I need for lasagna,retrieve_ingredients
+show rápida recipes,list_by_tag
+quero pratos com banana,list_by_ingredient
+show light recipes,list_by_tag
+show me a light dish,find_recipe
+show me a portuguesa dish,find_recipe
+what do I need for pancakes,retrieve_ingredients
+ingredients for carbonara,retrieve_ingredients
+how long to cook lasagna,get_prep_time
+recipes that include batata,list_by_ingredient
+ingredientes para lasagna,retrieve_ingredients
+recipes that include atum,list_by_ingredient
+quero uma receita dessert,find_recipe
+prep time for carbonara,get_prep_time
+recipes that include feijão,list_by_ingredient
+ingredients for apple pie,retrieve_ingredients
+show portuguesa recipes,list_by_tag
+list ingredients of waffles,retrieve_ingredients
+quero pratos com tomate,list_by_ingredient
+recipes that include banana,list_by_ingredient
+o que preciso para fazer apple pie,retrieve_ingredients
+quanto tempo leva canja,get_prep_time
+quero uma receita economical,find_recipe
+procura uma receita gluten-free,find_recipe
+find recipes with batata,list_by_ingredient
+ingredients for tiramisu,retrieve_ingredients
+procura receitas com atum,list_by_ingredient
+procura pratos simple,list_by_tag
+how much time to make salada russa,get_prep_time
+list dessert dishes,list_by_tag
+list rápida dishes,list_by_tag
+how much time to make mousse de chocolate,get_prep_time
+show me a rápida dish,find_recipe
+procura uma receita dessert,find_recipe
+list portuguesa dishes,list_by_tag
+suggest a breakfast recipe,find_recipe
+find a healthy recipe,find_recipe
+how much time to make salada russa,get_prep_time
+what do I need for risotto,retrieve_ingredients
+mostra receitas low-carb,list_by_tag
+suggest a dessert recipe,find_recipe
+o que preciso para fazer moqueca,retrieve_ingredients
+find a brasileira recipe,find_recipe
+show spicy recipes,list_by_tag
+list ingredients of lasagna,retrieve_ingredients
+how much time to make bolo de cenoura,get_prep_time
+list ingredients of guacamole,retrieve_ingredients
+quanto tempo leva lasagna,get_prep_time
+suggest a healthy recipe,find_recipe
+prep time for waffles,get_prep_time
+list economical dishes,list_by_tag
+show portuguesa recipes,list_by_tag
+show dishes using coco,list_by_ingredient
+show me a dessert dish,find_recipe
+find a simple recipe,find_recipe
+ingredientes para moqueca,retrieve_ingredients
+find light meals,list_by_tag
+suggest a low-carb recipe,find_recipe
+list dessert dishes,list_by_tag
+prep time for arroz doce,get_prep_time
+find a spicy recipe,find_recipe
+suggest a gluten-free recipe,find_recipe
+procura pratos spicy,list_by_tag
+list economical dishes,list_by_tag
+show me a simple dish,find_recipe
+recipes that include queijo,list_by_ingredient
+find spicy meals,list_by_tag
+show dishes using carne,list_by_ingredient
+list ingredients of carbonara,retrieve_ingredients
+show dishes using bacalhau,list_by_ingredient
+prep time for guacamole,get_prep_time
+quero uma receita light,find_recipe
+find a vegan recipe,find_recipe
+find recipes with camarão,list_by_ingredient
+ingredients for salada russa,retrieve_ingredients
+mostra receitas gluten-free,list_by_tag
+recipes that include cogumelos,list_by_ingredient
+list ingredients of feijoada,retrieve_ingredients
+quero uma receita brasileira,find_recipe
+ingredients for sopa de legumes,retrieve_ingredients
+quero uma receita low-carb,find_recipe
+mostra receitas breakfast,list_by_tag
+list gluten-free dishes,list_by_tag
+quero uma receita brasileira,find_recipe
+show dishes using alho,list_by_ingredient
+find recipes with coco,list_by_ingredient
+find a portuguesa recipe,find_recipe
+prep time for guacamole,get_prep_time
+how long to cook feijoada,get_prep_time
+quero uma receita simple,find_recipe
+procura uma receita economical,find_recipe
+what do I need for moqueca,retrieve_ingredients
+tempo de preparo da arroz doce,get_prep_time
+procura receitas com chocolate,list_by_ingredient
+procura uma receita economical,find_recipe
+mostra receitas vegan,list_by_tag
+show breakfast recipes,list_by_tag
+show me a light dish,find_recipe
+how long to cook paella,get_prep_time
+quero uma receita simple,find_recipe
+tempo de preparo da salada russa,get_prep_time
+show dishes using frango,list_by_ingredient
+find recipes with batata,list_by_ingredient
+ingredientes para arroz doce,retrieve_ingredients
+tempo de preparo da sopa de legumes,get_prep_time
+mostra receitas light,list_by_tag
+find a gluten-free recipe,find_recipe
+tempo de preparo da carne assada,get_prep_time
+how long to cook risotto,get_prep_time
+ingredients for apple pie,retrieve_ingredients
+show dishes using chocolate,list_by_ingredient
+show me a easy dish,find_recipe
+find recipes with carne,list_by_ingredient
+tempo de preparo da mousse de chocolate,get_prep_time
+show rápida recipes,list_by_tag
+ingredientes para bolo de cenoura,retrieve_ingredients
+ingredientes para paella,retrieve_ingredients
+quero pratos com banana,list_by_ingredient
+quero uma receita vegetarian,find_recipe
+recipes that include bacalhau,list_by_ingredient
+how much time to make feijoada,get_prep_time
+prep time for guacamole,get_prep_time
+find spicy meals,list_by_tag
+suggest a simple recipe,find_recipe
+ingredients for tiramisu,retrieve_ingredients
+quanto tempo leva arroz doce,get_prep_time
+ingredients for carbonara,retrieve_ingredients
+procura pratos easy,list_by_tag
+tempo de preparo da waffles,get_prep_time
+how much time to make feijoada,get_prep_time
+tempo de preparo da canja,get_prep_time
+quero uma receita brasileira,find_recipe
+recipes that include banana,list_by_ingredient
+prep time for risotto,get_prep_time
+show me a healthy dish,find_recipe
+how much time to make carbonara,get_prep_time
+show simple recipes,list_by_tag
+ingredients for apple pie,retrieve_ingredients
+list simple dishes,list_by_tag
+procura pratos vegetarian,list_by_tag
+quero pratos com queijo,list_by_ingredient
+find a rápida recipe,find_recipe
+show vegetarian recipes,list_by_tag
+how long to cook feijoada,get_prep_time
+quero pratos com nozes,list_by_ingredient
+ingredientes para apple pie,retrieve_ingredients
+show dishes using cogumelos,list_by_ingredient
+how much time to make guacamole,get_prep_time
+recipes that include frango,list_by_ingredient
+procura uma receita rápida,find_recipe
+mostra receitas light,list_by_tag
+find recipes with carne,list_by_ingredient
+find a dessert recipe,find_recipe
+list ingredients of waffles,retrieve_ingredients
+recipes that include arroz,list_by_ingredient
+tempo de preparo da apple pie,get_prep_time
+find economical meals,list_by_tag
+show vegetarian recipes,list_by_tag
+find recipes with queijo,list_by_ingredient
+find recipes with carne,list_by_ingredient
+procura uma receita brasileira,find_recipe
+mostra receitas portuguesa,list_by_tag
+show dishes using atum,list_by_ingredient
+prep time for feijoada,get_prep_time
+find recipes with banana,list_by_ingredient
+list ingredients of moqueca,retrieve_ingredients
+o que preciso para fazer guacamole,retrieve_ingredients
+how much time to make apple pie,get_prep_time
+ingredientes para carne assada,retrieve_ingredients
+find a healthy recipe,find_recipe
+show economical recipes,list_by_tag
+ingredientes para carbonara,retrieve_ingredients
+o que preciso para fazer paella,retrieve_ingredients
+what do I need for bolo de cenoura,retrieve_ingredients
+ingredientes para tiramisu,retrieve_ingredients
+find healthy meals,list_by_tag
+recipes that include queijo,list_by_ingredient
+ingredientes para sopa de legumes,retrieve_ingredients
+how long to cook carne assada,get_prep_time
+procura receitas com nozes,list_by_ingredient
+procura receitas com queijo,list_by_ingredient
+show dishes using camarão,list_by_ingredient
+ingredientes para pancakes,retrieve_ingredients
+show dishes using carne,list_by_ingredient
+quero uma receita rápida,find_recipe
+show healthy recipes,list_by_tag
+prep time for bolo de iogurte,get_prep_time
+list dessert dishes,list_by_tag
+find a healthy recipe,find_recipe
+ingredientes para paella,retrieve_ingredients
+procura pratos spicy,list_by_tag
+find a economical recipe,find_recipe
+show dishes using courgette,list_by_ingredient
+list ingredients of bolo de cenoura,retrieve_ingredients
+quero uma receita portuguesa,find_recipe
+quanto tempo leva guacamole,get_prep_time
+suggest a simple recipe,find_recipe
+procura pratos breakfast,list_by_tag
+find recipes with queijo,list_by_ingredient
+how long to cook paella,get_prep_time
+procura receitas com atum,list_by_ingredient
+quanto tempo leva lasagna,get_prep_time
+suggest a spicy recipe,find_recipe
+prep time for tiramisu,get_prep_time
+ingredientes para waffles,retrieve_ingredients
+show dishes using espinafres,list_by_ingredient
+what do I need for paella,retrieve_ingredients
+how much time to make apple pie,get_prep_time
+procura pratos economical,list_by_tag
+ingredientes para bolo de cenoura,retrieve_ingredients
+prep time for salada russa,get_prep_time
+quero uma receita vegetarian,find_recipe
+procura uma receita brasileira,find_recipe
+ingredientes para canja,retrieve_ingredients
+show dishes using espinafres,list_by_ingredient
+recipes that include camarão,list_by_ingredient
+how long to cook carbonara,get_prep_time
+quero uma receita healthy,find_recipe
+list ingredients of sopa de legumes,retrieve_ingredients
+how long to cook carne assada,get_prep_time
+find economical meals,list_by_tag
+quanto tempo leva carne assada,get_prep_time
+find vegan meals,list_by_tag
+find recipes with banana,list_by_ingredient
+list easy dishes,list_by_tag
+show low-carb recipes,list_by_tag
+mostra receitas gluten-free,list_by_tag
+ingredientes para apple pie,retrieve_ingredients
+quanto tempo leva pancakes,get_prep_time
+find breakfast meals,list_by_tag
+show me a breakfast dish,find_recipe
+mostra receitas rápida,list_by_tag
+procura pratos rápida,list_by_tag
+quanto tempo leva sopa de legumes,get_prep_time
+tempo de preparo da carbonara,get_prep_time
+what do I need for apple pie,retrieve_ingredients
+tempo de preparo da feijoada,get_prep_time
+ingredients for moqueca,retrieve_ingredients
+find healthy meals,list_by_tag
+mostra receitas vegan,list_by_tag
+show me a gluten-free dish,find_recipe
+suggest a simple recipe,find_recipe
+ingredients for bolo de cenoura,retrieve_ingredients
+procura uma receita dessert,find_recipe
+what do I need for apple pie,retrieve_ingredients
+how much time to make pancakes,get_prep_time
+suggest a vegetarian recipe,find_recipe
+procura receitas com alho,list_by_ingredient
+o que preciso para fazer carbonara,retrieve_ingredients
+suggest a easy recipe,find_recipe
+procura receitas com nozes,list_by_ingredient
+show me a healthy dish,find_recipe
+show dishes using cogumelos,list_by_ingredient
+quanto tempo leva waffles,get_prep_time
+procura uma receita spicy,find_recipe
+ingredientes para mousse de chocolate,retrieve_ingredients
+list ingredients of tiramisu,retrieve_ingredients
+find recipes with batata,list_by_ingredient
+show economical recipes,list_by_tag
+procura uma receita vegan,find_recipe
+procura receitas com espinafres,list_by_ingredient
+recipes that include camarão,list_by_ingredient
+recipes that include queijo,list_by_ingredient
+find recipes with feijão,list_by_ingredient
+quanto tempo leva lasagna,get_prep_time
+procura uma receita spicy,find_recipe
+procura uma receita healthy,find_recipe
+find a light recipe,find_recipe
+ingredientes para salada russa,retrieve_ingredients
+how long to cook pizza,get_prep_time
+procura pratos vegan,list_by_tag
+receitas em 10 minutos,list_by_time
+pratos rápidos em 15 minutos,list_by_time
+o que posso cozinhar em 20 mins,list_by_time
+receitas que demorem 30 minutos,list_by_time
+quanto tempo demora a fazer arroz de pato,get_prep_time
+quanto tempo para fazer uma lasanha,get_prep_time
+quanto tempo demora a fazer açorda,get_prep_time
+tempo de preparação para bacalhau à brás,get_prep_time
+receitas que demorem menos de 20 minutos,list_by_time
+pratos para cozinhar em 45 minutos,list_by_time
+quanto tempo demora uma francesinha,get_prep_time
+receitas de jantar em meia hora,list_by_time
+preciso de algo rápido em 5 mins,list_by_time
+quanto tempo leva fazer sopa de legumes,get_prep_time
+receitas que demorem 1 hora,list_by_time
+quanto tempo leva o cozido à portuguesa,get_prep_time
+cozinha em 25 minutos,list_by_time
+ideal para almoço em 30m,list_by_time
+quanto tempo para cozer peito de frango,get_prep_time
+pratos fáceis em 15 minutos,list_by_time
+receitas para o almoço em 40 minutos,list_by_time
+demora muito tempo fazer risotto?,get_prep_time
+como fazer algo rápido em 10 mins,list_by_time
+pratos em 5-10 minutos,list_by_time
+quanto tempo preparar bacalhau com natas,get_prep_time
+quero uma receita com bacalhau,list_by_ingredient
+mostra receitas com frango,list_by_ingredient
+find recipes using chocolate,list_by_ingredient
+procura receitas com arroz,list_by_ingredient
+show me dishes with salmon,list_by_ingredient
+receitas que levem tomate,list_by_ingredient
+receitas com queijo,list_by_ingredient
+o que posso fazer com grão-de-bico,list_by_ingredient
+ideias com couve-flor,list_by_ingredient
+pratos com batata doce,list_by_ingredient
+receitas com cogumelos,list_by_ingredient
+cozinhar com atum enlatado,list_by_ingredient
+o que fazer com sobras de frango,list_by_ingredient
+receitas com feijão preto,list_by_ingredient
+ideias com espinafres,list_by_ingredient
+pratos com tomate cherry,list_by_ingredient
+receitas com bacon,list_by_ingredient
+receitas com limão,list_by_ingredient
+receitas sem carne com tofu,list_by_ingredient
+receitas com camarão,list_by_ingredient
+o que cozinhar com courgette,list_by_ingredient
+cozinhar com lentilhas,list_by_ingredient
+pratos com queijo feta,list_by_ingredient
+receitas com sobremesa de maçã,list_by_ingredient
+ideias com pimentos,list_by_ingredient
+receitas com morango,list_by_ingredient
+o que fazer com abóbora,list_by_ingredient
+pratos com quinoa,list_by_ingredient
+receitas com sardinha,list_by_ingredient
+receitas com queijo fresco,list_by_ingredient
+ideias com peito de peru,list_by_ingredient
+receitas com espinafre e queijo,list_by_ingredient
+receitas com manteiga de amendoim,list_by_ingredient
+pratos com ovo,list_by_ingredient
+receitas que incluam alho francês,list_by_ingredient
+como preparar bacalhau à brás,find_recipe
+receita de arroz de pato,find_recipe
+como fazer francesinha em casa,find_recipe
+mostra-me a receita de açorda,find_recipe
+passo a passo para fazer sande de frango,find_recipe
+receita para bacalhau com natas,find_recipe
+como preparar pastel de nata,find_recipe
+receita tradicional de cozido,find_recipe
+mostrar ingredientes do caldo verde,retrieve_ingredients
+quais os ingredientes da francesinha,retrieve_ingredients
+ingredientes necessários para arroz de marisco,retrieve_ingredients
+lista de ingredientes para bacalhau à lagareiro,retrieve_ingredients
+receita de bolo de chocolate,find_recipe
+como fazer mousse de maracujá,find_recipe
+receita de empadão de carne,find_recipe
+como preparar cataplana de peixe,find_recipe
+receita de cozido à portuguesa,find_recipe
+como fazer tartes de maçã,find_recipe
+ingredientes para tarte de limão,retrieve_ingredients
+receita de arroz doce,find_recipe
+como fazer pão caseiro,find_recipe
+receita de lasanha bolonhesa,find_recipe
+ingredientes para feijoada,retrieve_ingredients
+como preparar bife à portuguesa,find_recipe
+receita de bacalhau com broa,find_recipe
+receitas fáceis,list_by_tag
+receitas saudáveis,list_by_tag
+ideias vegetarianas,list_by_tag
+receitas sem glúten,list_by_tag
+pratos rápidos,list_by_tag
+sobremesas fáceis,list_by_tag
+opções low-carb,list_by_tag
+jantares para crianças,list_by_tag
+petiscos para festa,list_by_tag
+receitas económicas,list_by_tag
+pratos de forno,list_by_tag
+ideias para piquenique,list_by_tag
+receitas de Natal,list_by_tag
+comidas de conforto,list_by_tag
+receitas sem lactose,list_by_tag

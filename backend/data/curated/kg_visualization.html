@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97C2FC", "id": "http://example.org/recipes#Recipe_100230", "label": "Recipe_100230", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_salt", "label": "Ingredient_salt", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_cakes", "label": "Tag_cakes", "shape": "dot"}, {"color": "#CCCCCC", "id": "cakes", "label": "cakes", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://example.org/recipes#Recipe_100002_StepsSeq", "label": "Recipe_100002_StepsSeq", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_8", "label": "Recipe_100002_Step_8", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_flour", "label": "Ingredient_flour", "shape": "dot"}, {"color": "#CCCCCC", "id": "flour", "label": "flour", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_1", "label": "Recipe_100002_Step_1", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://example.org/recipes#Step", "label": "Step", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100230_Step_4", "label": "Recipe_100230_Step_4", "shape": "dot"}, {"color": "#CCCCCC", "id": "cream butter and sugar until very light and fluffy , about 5 minutes", "label": "cream butter and sugar until very light and fluffy , about 5 minutes", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100230_Step_2", "label": "Recipe_100230_Step_2", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_low_in_something", "label": "Tag_low_in_something", "shape": "dot"}, {"color": "#CCCCCC", "id": "low-in-something", "label": "low-in-something", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_course", "label": "Tag_course", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_7", "label": "Recipe_100002_Step_7", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_chocolate_instant_pudding", "label": "Ingredient_chocolate_instant_pudding", "shape": "dot"}, {"color": "#CCCCCC", "id": "chocolate instant pudding", "label": "chocolate instant pudding", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_milk", "label": "Ingredient_milk", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://example.org/recipes#Ingredient", "label": "Ingredient", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100230_Step_6", "label": "Recipe_100230_Step_6", "shape": "dot"}, {"color": "#CCCCCC", "id": "beat in vanilla", "label": "beat in vanilla", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_kid_friendly", "label": "Tag_kid_friendly", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_3", "label": "Recipe_100002_Step_3", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100230_Step_1", "label": "Recipe_100230_Step_1", "shape": "dot"}, {"color": "#CCCCCC", "id": "in a small saucepan , mix milk , flour and salt until smooth", "label": "in a small saucepan , mix milk , flour and salt until smooth", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_desserts", "label": "Tag_desserts", "shape": "dot"}, {"color": "#CCCCCC", "id": "desserts", "label": "desserts", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://example.org/recipes#Recipe_100230_StepsSeq", "label": "Recipe_100230_StepsSeq", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_2", "label": "Recipe_100002_Step_2", "shape": "dot"}, {"color": "#97C2FC", "id": "http://example.org/recipes#Recipe_100002", "label": "Recipe_100002", "shape": "dot"}, {"color": "#CCCCCC", "id": "100002", "label": "100002", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_easy", "label": "Tag_easy", "shape": "dot"}, {"color": "#CCCCCC", "id": "easy", "label": "easy", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://example.org/recipes#Tag", "label": "Tag", "shape": "dot"}, {"color": "#CCCCCC", "id": "10", "label": "10", "shape": "dot"}, {"color": "#E0A8F0", "id": "http://example.org/recipes#Recipe_100002_Nutrition", "label": "Recipe_100002_Nutrition", "shape": "dot"}, {"color": "#CCCCCC", "id": "11.0", "label": "11.0", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_sugar", "label": "Ingredient_sugar", "shape": "dot"}, {"color": "#CCCCCC", "id": "7.0", "label": "7.0", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_60_minutes_or_less", "label": "Tag_60_minutes_or_less", "shape": "dot"}, {"color": "#CCCCCC", "id": "astoria frosting", "label": "astoria frosting", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_30_minutes_or_less", "label": "Tag_30_minutes_or_less", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_pies", "label": "Tag_pies", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://example.org/recipes#Nutrition", "label": "Nutrition", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://www.w3.org/2000/01/rdf-schema#Class", "label": "Class", "shape": "dot"}, {"color": "#CCCCCC", "id": "original randomized", "label": "original randomized", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100230_Step_3", "label": "Recipe_100230_Step_3", "shape": "dot"}, {"color": "#CCCCCC", "id": "remove from heat and cool", "label": "remove from heat and cool", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_time_to_make", "label": "Tag_time_to_make", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://example.org/recipes#Recipe", "label": "Recipe", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_preparation", "label": "Tag_preparation", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://example.org/recipes#Tag_5_ingredients_or_less", "label": "Tag_5_ingredients_or_less", "shape": "dot"}, {"color": "#CCCCCC", "id": "press firmly onto bottom and up side of 9-inch pie plate to form crust", "label": "press firmly onto bottom and up side of 9-inch pie plate to form crust", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_cool_whip", "label": "Ingredient_cool_whip", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100230_Step_5", "label": "Recipe_100230_Step_5", "shape": "dot"}, {"color": "#CCCCCC", "id": "kid-friendly", "label": "kid-friendly", "shape": "dot"}, {"color": "#CCCCCC", "id": "preparation", "label": "preparation", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_9", "label": "Recipe_100002_Step_9", "shape": "dot"}, {"color": "#E0A8F0", "id": "http://example.org/recipes#Recipe_100230_Nutrition", "label": "Recipe_100230_Nutrition", "shape": "dot"}, {"color": "#CCCCCC", "id": "21.0", "label": "21.0", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_cake_fillings_and_frostings", "label": "Tag_cake_fillings_and_frostings", "shape": "dot"}, {"color": "#CCCCCC", "id": "cake-fillings-and-frostings", "label": "cake-fillings-and-frostings", "shape": "dot"}, {"color": "#CCCCCC", "id": "20", "label": "20", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_vanilla_extract", "label": "Ingredient_vanilla_extract", "shape": "dot"}, {"color": "#CCCCCC", "id": "vanilla extract", "label": "vanilla extract", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_butter", "label": "Ingredient_butter", "shape": "dot"}, {"color": "#CCCCCC", "id": "cool whip", "label": "cool whip", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_dietary", "label": "Tag_dietary", "shape": "dot"}, {"color": "#CCCCCC", "id": "spoon into crust", "label": "spoon into crust", "shape": "dot"}, {"color": "#CCCCCC", "id": "milk", "label": "milk", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_low_protein", "label": "Tag_low_protein", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_4", "label": "Recipe_100002_Step_4", "shape": "dot"}, {"color": "#CCCCCC", "id": "reserve remaining crumbs", "label": "reserve remaining crumbs", "shape": "dot"}, {"color": "#CCCCCC", "id": "butter", "label": "butter", "shape": "dot"}, {"color": "#CCCCCC", "id": "5", "label": "5", "shape": "dot"}, {"color": "#CCCCCC", "id": "dietary", "label": "dietary", "shape": "dot"}, {"color": "#CCCCCC", "id": "63.0", "label": "63.0", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_10", "label": "Recipe_100002_Step_10", "shape": "dot"}, {"color": "#FB7E81", "id": "http://example.org/recipes#Ingredient_chocolate_chip_cookies", "label": "Ingredient_chocolate_chip_cookies", "shape": "dot"}, {"color": "#CCCCCC", "id": "low-protein", "label": "low-protein", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100230_Step_7", "label": "Recipe_100230_Step_7", "shape": "dot"}, {"color": "#CCCCCC", "id": "15.0", "label": "15.0", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_6", "label": "Recipe_100002_Step_6", "shape": "dot"}, {"color": "#CCCCCC", "id": "7", "label": "7", "shape": "dot"}, {"color": "#CCCCCC", "id": "42.0", "label": "42.0", "shape": "dot"}, {"color": "#CCCCCC", "id": "salt", "label": "salt", "shape": "dot"}, {"color": "#CCCCCC", "id": "203.0", "label": "203.0", "shape": "dot"}, {"color": "#CCCCCC", "id": "stir for 2 minutes with wire whisk", "label": "stir for 2 minutes with wire whisk", "shape": "dot"}, {"color": "#7BE141", "id": "http://example.org/recipes#Recipe_100002_Step_5", "label": "Recipe_100002_Step_5", "shape": "dot"}, {"color": "#CCCCCC", "id": "904.0", "label": "904.0", "shape": "dot"}, {"color": "#CCCCCC", "id": "combine 1 1 / 2 cups milk and pudding mix in medium bowl", "label": " 2 cups milk and pudding mix in medium bowl", "shape": "dot"}, {"color": "#CCCCCC", "id": "gradually beat in cooled flour mixture until smooth", "label": "gradually beat in cooled flour mixture until smooth", "shape": "dot"}, {"color": "#F5A45D", "id": "http://example.org/recipes#Tag_pies_and_tarts", "label": "Tag_pies_and_tarts", "shape": "dot"}, {"color": "#CCCCCC", "id": "6", "label": "6", "shape": "dot"}, {"color": "#CCCCCC", "id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq", "label": "Seq", "shape": "dot"}, {"color": "#CCCCCC", "id": "course", "label": "course", "shape": "dot"}, {"color": "#CCCCCC", "id": "time-to-make", "label": "time-to-make", "shape": "dot"}, {"color": "#CCCCCC", "id": "frosts one cake", "label": "frosts one cake", "shape": "dot"}, {"color": "#CCCCCC", "id": "99.0", "label": "99.0", "shape": "dot"}, {"color": "#CCCCCC", "id": "place over low heat and cook , stirring constantly until thickened", "label": "place over low heat and cook , stirring constantly until thickened", "shape": "dot"}, {"color": "#CCCCCC", "id": "100230", "label": "100230", "shape": "dot"}, {"color": "#CCCCCC", "id": "chocolate chip cookies", "label": "chocolate chip cookies", "shape": "dot"}, {"color": "#CCCCCC", "id": "gently stir in 2 cups thawed cool whip", "label": "gently stir in 2 cups thawed cool whip", "shape": "dot"}, {"color": "#CCCCCC", "id": "267.0", "label": "267.0", "shape": "dot"}, {"color": "#CCCCCC", "id": "mix 1 1 / 2 cups of the crumbs with melted butter", "label": " 2 cups of the crumbs with melted butter", "shape": "dot"}, {"color": "#CCCCCC", "id": "pies-and-tarts", "label": "pies-and-tarts", "shape": "dot"}, {"color": "#CCCCCC", "id": "35.0", "label": "35.0", "shape": "dot"}, {"color": "#CCCCCC", "id": "pies", "label": "pies", "shape": "dot"}, {"color": "#CCCCCC", "id": "top with reserved cookie crumbs", "label": "top with reserved cookie crumbs", "shape": "dot"}, {"color": "#CCCCCC", "id": "30-minutes-or-less", "label": "30-minutes-or-less", "shape": "dot"}, {"color": "#CCCCCC", "id": "9.0", "label": "9.0", "shape": "dot"}, {"color": "#CCCCCC", "id": "refrigerate 30 minutes or until set", "label": "refrigerate 30 minutes or until set", "shape": "dot"}, {"color": "#CCCCCC", "id": "crush 16 cookies in a sealable plastic bag until fine crumbs form", "label": "crush 16 cookies in a sealable plastic bag until fine crumbs form", "shape": "dot"}, {"color": "#CCCCCC", "id": "sugar", "label": "sugar", "shape": "dot"}, {"color": "#CCCCCC", "id": "40", "label": "40", "shape": "dot"}, {"color": "#CCCCCC", "id": "chips ahoy chocolate pie", "label": "chips ahoy chocolate pie", "shape": "dot"}, {"color": "#CCCCCC", "id": "60-minutes-or-less", "label": "60-minutes-or-less", "shape": "dot"}, {"color": "#CCCCCC", "id": "26.0", "label": "26.0", "shape": "dot"}, {"color": "#CCCCCC", "id": "358.1", "label": "358.1", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_salt"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_cakes", "title": "label", "to": "cakes"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_8", "to": "http://example.org/recipes#Recipe_100002_Step_8"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_flour", "title": "label", "to": "flour"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_1", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_4", "title": "comment", "to": "cream butter and sugar until very light and fluffy , about 5 minutes"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_2", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_low_in_something", "title": "label", "to": "low-in-something"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_course"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_7", "to": "http://example.org/recipes#Recipe_100002_Step_7"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_chocolate_instant_pudding", "title": "label", "to": "chocolate instant pudding"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_milk", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_6", "title": "comment", "to": "beat in vanilla"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_flour", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_kid_friendly"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_low_in_something"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_3", "to": "http://example.org/recipes#Recipe_100002_Step_3"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_1", "title": "comment", "to": "in a small saucepan , mix milk , flour and salt until smooth"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_desserts", "title": "label", "to": "desserts"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_StepsSeq", "title": "_6", "to": "http://example.org/recipes#Recipe_100230_Step_6"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_2", "to": "http://example.org/recipes#Recipe_100002_Step_2"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_milk"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "id", "to": "100002"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_easy", "title": "label", "to": "easy"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_course", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "n_steps", "to": "10"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_cakes", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Nutrition", "title": "unknown", "to": "11.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasStep", "to": "http://example.org/recipes#Recipe_100002_StepsSeq"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_sugar"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Nutrition", "title": "protein", "to": "7.0"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_60_minutes_or_less", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "label", "to": "astoria frosting"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_2", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_30_minutes_or_less", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_pies", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_30_minutes_or_less"}, {"arrows": "to", "from": "http://example.org/recipes#Nutrition", "title": "type", "to": "http://www.w3.org/2000/01/rdf-schema#Class"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "origin", "to": "original randomized"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_3", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_3", "title": "comment", "to": "remove from heat and cool"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_cakes"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_time_to_make"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "type", "to": "http://example.org/recipes#Recipe"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_preparation"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_StepsSeq", "title": "_4", "to": "http://example.org/recipes#Recipe_100230_Step_4"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_5_ingredients_or_less"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_3", "title": "comment", "to": "press firmly onto bottom and up side of 9-inch pie plate to form crust"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_cool_whip", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_5", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_kid_friendly", "title": "label", "to": "kid-friendly"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_preparation", "title": "label", "to": "preparation"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_time_to_make", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_9", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Nutrition", "title": "sodium", "to": "21.0"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient", "title": "type", "to": "http://www.w3.org/2000/01/rdf-schema#Class"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_cake_fillings_and_frostings", "title": "label", "to": "cake-fillings-and-frostings"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_desserts"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "minutes", "to": "20"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_60_minutes_or_less"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_vanilla_extract", "title": "label", "to": "vanilla extract"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_cool_whip"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_butter"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Nutrition", "title": "type", "to": "http://example.org/recipes#Nutrition"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasNutrition", "to": "http://example.org/recipes#Recipe_100002_Nutrition"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_cool_whip", "title": "label", "to": "cool whip"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_dietary", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_8", "title": "comment", "to": "spoon into crust"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_easy"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_milk", "title": "label", "to": "milk"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_low_protein"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_8", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_4", "title": "comment", "to": "reserve remaining crumbs"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_butter", "title": "label", "to": "butter"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_easy", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_desserts", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "type", "to": "http://example.org/recipes#Recipe"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "n_ingredients", "to": "5"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_dietary", "title": "label", "to": "dietary"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Nutrition", "title": "saturatedFat", "to": "63.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_StepsSeq", "title": "_2", "to": "http://example.org/recipes#Recipe_100230_Step_2"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_StepsSeq", "title": "_1", "to": "http://example.org/recipes#Recipe_100230_Step_1"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_10", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_time_to_make"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_chocolate_chip_cookies"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_low_protein", "title": "label", "to": "low-protein"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_7", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Nutrition", "title": "sodium", "to": "15.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_6", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_sugar", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "n_steps", "to": "7"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Nutrition", "title": "sugar", "to": "42.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_StepsSeq", "title": "_3", "to": "http://example.org/recipes#Recipe_100230_Step_3"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_salt", "title": "label", "to": "salt"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_StepsSeq", "title": "_5", "to": "http://example.org/recipes#Recipe_100230_Step_5"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Nutrition", "title": "saturatedFat", "to": "203.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_flour"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_salt", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_6", "title": "comment", "to": "stir for 2 minutes with wire whisk"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_StepsSeq", "title": "_7", "to": "http://example.org/recipes#Recipe_100230_Step_7"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_4", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_9", "to": "http://example.org/recipes#Recipe_100002_Step_9"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_milk"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_5", "to": "http://example.org/recipes#Recipe_100002_Step_5"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_chocolate_instant_pudding"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Nutrition", "title": "calories", "to": "904.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_5", "title": "comment", "to": "combine 1 1 / 2 cups milk and pudding mix in medium bowl"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_5", "title": "comment", "to": "gradually beat in cooled flour mixture until smooth"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_pies_and_tarts", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "n_ingredients", "to": "6"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Nutrition", "title": "type", "to": "http://example.org/recipes#Nutrition"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "origin", "to": "original randomized"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_low_in_something", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_dietary"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "type", "to": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_course", "title": "label", "to": "course"}, {"arrows": "to", "from": "http://example.org/recipes#Tag", "title": "type", "to": "http://www.w3.org/2000/01/rdf-schema#Class"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_time_to_make", "title": "label", "to": "time-to-make"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_preparation", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasStep", "to": "http://example.org/recipes#Recipe_100230_StepsSeq"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_7", "title": "comment", "to": "frosts one cake"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Nutrition", "title": "totalFat", "to": "99.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_6", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Step", "title": "type", "to": "http://www.w3.org/2000/01/rdf-schema#Class"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_kid_friendly", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_1", "to": "http://example.org/recipes#Recipe_100002_Step_1"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_preparation"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_6", "to": "http://example.org/recipes#Recipe_100002_Step_6"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_chocolate_chip_cookies", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_2", "title": "comment", "to": "place over low heat and cook , stirring constantly until thickened"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "id", "to": "100230"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_low_protein", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_chocolate_chip_cookies", "title": "label", "to": "chocolate chip cookies"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_7", "title": "comment", "to": "gently stir in 2 cups thawed cool whip"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Nutrition", "title": "sugar", "to": "267.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe", "title": "type", "to": "http://www.w3.org/2000/01/rdf-schema#Class"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasNutrition", "to": "http://example.org/recipes#Recipe_100230_Nutrition"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_butter", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasTag", "to": "http://example.org/recipes#Tag_cake_fillings_and_frostings"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_course"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_2", "title": "comment", "to": "mix 1 1 / 2 cups of the crumbs with melted butter"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_vanilla_extract"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_5", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_pies_and_tarts", "title": "label", "to": "pies-and-tarts"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_desserts"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_3", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Nutrition", "title": "totalFat", "to": "35.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_pies"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_4", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_pies", "title": "label", "to": "pies"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_4", "to": "http://example.org/recipes#Recipe_100002_Step_4"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_vanilla_extract", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "hasTag", "to": "http://example.org/recipes#Tag_pies_and_tarts"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_10", "title": "comment", "to": "top with reserved cookie crumbs"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230", "title": "hasIngredient", "to": "http://example.org/recipes#Ingredient_butter"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_30_minutes_or_less", "title": "label", "to": "30-minutes-or-less"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_7", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Nutrition", "title": "protein", "to": "9.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_9", "title": "comment", "to": "refrigerate 30 minutes or until set"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_StepsSeq", "title": "_10", "to": "http://example.org/recipes#Recipe_100002_Step_10"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Step_1", "title": "comment", "to": "crush 16 cookies in a sealable plastic bag until fine crumbs form"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_cake_fillings_and_frostings", "title": "type", "to": "http://example.org/recipes#Tag"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_chocolate_instant_pudding", "title": "type", "to": "http://example.org/recipes#Ingredient"}, {"arrows": "to", "from": "http://example.org/recipes#Ingredient_sugar", "title": "label", "to": "sugar"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "minutes", "to": "40"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002", "title": "label", "to": "chips ahoy chocolate pie"}, {"arrows": "to", "from": "http://example.org/recipes#Tag_60_minutes_or_less", "title": "label", "to": "60-minutes-or-less"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Nutrition", "title": "unknown", "to": "26.0"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_StepsSeq", "title": "type", "to": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100230_Step_1", "title": "type", "to": "http://example.org/recipes#Step"}, {"arrows": "to", "from": "http://example.org/recipes#Recipe_100002_Nutrition", "title": "calories", "to": "358.1"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"shape": "dot", "size": 12, "font": {"size": 12, "strokeWidth": 2}}, "edges": {"smooth": false, "color": {"inherit": true}}, "physics": {"enabled": true, "solver": "forceAtlas2Based", "stabilization": {"enabled": true, "iterations": 1000}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

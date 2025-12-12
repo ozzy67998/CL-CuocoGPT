@@ -1,0 +1,40 @@
+/* Panton font-face declarations */
+/* Using raw OTF files; browsers have broad support, but WOFF2 is recommended if available.
+   If you can convert to WOFF2, do so for performance. */
+
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-Thin.otf') format('opentype'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-ThinItalic.otf') format('opentype'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-ExtraLight.otf') format('opentype'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-ExtraLightItalic.otf') format('opentype'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-Light.otf') format('opentype'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-LightItalic.otf') format('opentype'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-Italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-SemiBold.otf') format('opentype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-SemiBoldItalic.otf') format('opentype'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-BoldItalic.otf') format('opentype'); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-ExtraBold.otf') format('opentype'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-ExtraBoldItalic.otf') format('opentype'); font-weight: 800; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-Black.otf') format('opentype'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-BlackItalic.otf') format('opentype'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-ExtraBlack.otf') format('opentype'); font-weight: 950; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Panton'; src: url('./assets/fonts/Panton/Panton-ExtraBlackItalic.otf') format('opentype'); font-weight: 950; font-style: italic; font-display: swap; }
+
+/* Icon fonts (treat as separate family for clarity) */
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsA-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsA-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsAFill-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsAFill-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsB-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsB-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsBFill-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsBFill-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsC-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsC-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsCFill-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsCFill-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsD-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsD-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsDFill-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'PantonIcons'; src: url('./assets/fonts/Panton/PantonIconsDFill-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }

@@ -1,0 +1,6 @@
+list_by_ingredient - top-k ingredients above threshold -> tudo (cinco)
+list_by_tag	- top-k tags above threshol -> tudo (cinco)
+find_recipe	- best recipe_name -> todos os dados dessa recipe (só uma) 
+retrieve_ingredients - best recipe_name -> ingredients dessa recipe (só uma)
+get_prep_time - best recipe_name -> 
+Se tiver Cooking_time -> procurar no "time" se tem esse tempo e retornar
